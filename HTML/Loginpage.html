@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <style>
+      body {
+        background: rgb(204, 179, 255);
+      }
+    </style>
+    <link rel="stylesheet" href="./CSS/Basics.css">
 </head>
 <body>
-      <h3>Please log in to continue</h3>
+      <h2>Login Here</h2>
 
-      <form action="/login" method="post">
-        <fieldset style="width:300px;">
-          <legend><strong>Login Details</strong></legend>
-
-          <label for="username">👤 Username:</label><br>
-          <input type="text" id="username" name="username" placeholder="Enter your username"><br><br>
-
-          <label for="password">🔒 Password:</label><br>
-          <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
-
-          <input type="submit" value="Login">
-        </fieldset>
+      <form action="/login" name="login" method="post">
+        <label for="uname">User Name :</label>
+        <input type="text" name="uname" placeholder="Enter User Name" required></br></br>
+        <label for="pass">Password :</label>
+        <input type="password" name="pass" placeholder="Enetr Your Password" required></br></br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </form>
-
 </body>
 </html>
