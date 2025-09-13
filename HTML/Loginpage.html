@@ -1,26 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <style>
-      body {
-        background: rgb(204, 179, 255);
-      }
-    </style>
-    <link rel="stylesheet" href="./CSS/Basics.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      background: lightskyblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background-color: lightcyan;
+      padding: 40px 50px;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0px 5px 10px cornflowerblue;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      width: 45%;
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button[type="submit"] {
+      background-color: green;
+    }
+
+    button[type="reset"] {
+      background-color: red;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
-      <h2>Login Here</h2>
+  <div class="form-container">
+    <h2>Login Here</h2>
 
-      <form action="/login" name="login" method="post">
-        <label for="uname">User Name :</label>
-        <input type="text" name="uname" placeholder="Enter User Name" required></br></br>
-        <label for="pass">Password :</label>
-        <input type="password" name="pass" placeholder="Enetr Your Password" required></br></br>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-      </form>
+    <form action="/login" name="login" method="post">
+      <label for="uname">User Name:</label>
+      <input type="text" id="uname" name="uname" placeholder="Enter User Name" required>
+
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" name="pass" placeholder="Enter Your Password" required>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </div>
 </body>
 </html>
