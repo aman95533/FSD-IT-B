@@ -1,4 +1,4 @@
-const url="https://api.github.com/users/aman95533";
+const url="https://dummyjson.com/recipes";
 const pr=fetch(url);
 pr.then((response)=>{
     return response.json();})
