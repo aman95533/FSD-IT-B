@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React CDN Example</title>
+    <style>
+        .book-list {
+    display: flex;
+    justify-content: space-around; /* or center, space-between */
+    align-items: center;
+    flex-wrap: wrap; /* allows wrapping to next line */
+    gap: 20px; /* spacing between cards */
+    margin-top: 20px;
+  }
+
+        .card{
+            background-color: gold;
+            color: blue;
+            border: 2px solid green;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Book Store</h1></center>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="book.js"></script>
+</body>
+</html>
