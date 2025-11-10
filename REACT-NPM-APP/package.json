@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "babel": "^5.8.38",
+    "react-dom": "^19.2.0"
+  }
+}

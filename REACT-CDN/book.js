@@ -9,7 +9,7 @@ function Book(props) {
 
   const h4 = React.createElement("h4", null, `Price: ${props.price}/-`);
 
-  const child = React.createElement("div", { className: "card" }, image, h4);
+  const child = React.createElement("div", { className: "card" }, image,h4);
   return child;
 }
 
